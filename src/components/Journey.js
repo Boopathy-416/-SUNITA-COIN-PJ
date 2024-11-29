@@ -33,7 +33,7 @@ export default function SpaceLanding() {
           </div>
         </div>
 
-        {/* Second Marquee */}
+        
         <div
           className="w-full sm:w-[150%] py-8 -rotate-6 overflow-hidden"
           style={{
