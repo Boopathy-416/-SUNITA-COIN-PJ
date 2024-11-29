@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.07dfa45d.css",
-    "main.js": "/static/js/main.2f8b01cd.js",
-    "static/js/891.ac917174.chunk.js": "/static/js/891.ac917174.chunk.js",
+    "main.css": "/static/css/main.d767d255.css",
+    "main.js": "/static/js/main.8829610b.js",
+    "static/js/453.f2e7cacb.chunk.js": "/static/js/453.f2e7cacb.chunk.js",
     "static/media/TT Firs Neue Trial Medium.ttf": "/static/media/TT Firs Neue Trial Medium.6c7be9f47861737e9c85.ttf",
     "static/media/ObjectSans-Regular.otf": "/static/media/ObjectSans-Regular.8e3ca8a29d32866844a1.otf",
     "static/media/Technology-Bold.ttf": "/static/media/Technology-Bold.8cdd2cfe2ab96f416aff.ttf",
     "static/media/Akira Expanded Demo.otf": "/static/media/Akira Expanded Demo.5198553380d9bb727554.otf",
     "index.html": "/index.html",
-    "main.07dfa45d.css.map": "/static/css/main.07dfa45d.css.map",
-    "main.2f8b01cd.js.map": "/static/js/main.2f8b01cd.js.map",
-    "891.ac917174.chunk.js.map": "/static/js/891.ac917174.chunk.js.map"
+    "main.d767d255.css.map": "/static/css/main.d767d255.css.map",
+    "main.8829610b.js.map": "/static/js/main.8829610b.js.map",
+    "453.f2e7cacb.chunk.js.map": "/static/js/453.f2e7cacb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07dfa45d.css",
-    "static/js/main.2f8b01cd.js"
+    "static/css/main.d767d255.css",
+    "static/js/main.8829610b.js"
   ]
 }

@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 export default function SpaceLanding() {
   return (
     <div className="min-h-screen  text-white relative overflow-hidden flex flex-col justify-center">
-      <div className="absolute inset-0 flex flex-col justify-center items-center gap-6">
+      <div className="absolute inset-0 flex flex-col justify-center items-center gap-8"
+   >
         {/* First Marquee */}
         <div
           className="w-full sm:w-[100%] rotate-6 overflow-hidden"
@@ -62,7 +63,10 @@ export default function SpaceLanding() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center mt-16 sm:mt-20 px-4">
+      <div className="relative z-10 flex mt-40 items-center justify-center  px-4"
+         style={{
+          top:"70px !important"
+        }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
           {/* Left Side - Astronaut Image */}
           <motion.div
@@ -189,7 +193,7 @@ export default function SpaceLanding() {
                     textDecorationSkipInk: "none",
                   }}
                 >
-                  Buy $SUNITA
+                  BUY $SUNITA
                 </a>
               </div>
             </div>

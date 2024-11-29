@@ -90,41 +90,7 @@ body {
     width: 100%;
   }
 }
-/*  */
-.scene {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.scene .rocket {
-  animation: floatRocket 2s ease-in-out infinite;
-  position: relative;
-}
-
-@keyframes floatRocket {
-  0%,
-  100% {
-    transform: translateY(-4px);
-  }
-  50% {
-    transform: translateY(4px);
-  }
-}
-
-.scene .rocket::before {
-  content: "";
-  position: absolute;
-  bottom: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(#00d0ff, transparent);
-  opacity: 0.5;
-  border-radius: 50%;
-}
 
 .buyh2 {
   font-family: "Akira Expanded";

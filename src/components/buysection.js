@@ -30,9 +30,9 @@ export default function HowToBuy() {
             {/* Wallet Card */}
             <div className="relative group">
               {/* Border design */}
-              <div className="absolute inset-0 bg-gradient-to-b from-gray-600/20 to-gray-900/20 rounded-3xl" />
+              <div className="absolute inset-0 bg-gradient-to-b from-gray-600/20 to-gray-900/20 opactiy-30 rounded-3xl" />
               <div className="absolute inset-0 border border-gray-700 rounded-3xl" />
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px]  opacity-10 group-hover:opacity-30 transition" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px]  opacity-30 group-hover:opacity-50 transition" />
 
               {/* Content */}
               <div className="relative opacity-90 p-6 sm:p-8 rounded-3xl min-h-[280px] flex flex-col">
@@ -86,9 +86,9 @@ export default function HowToBuy() {
 
             {/* Exchange Card */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-b from-gray-600/20 to-gray-900/20 rounded-3xl" />
+              <div className="absolute inset-0 bg-gradient-to-b from-gray-600/20 to-gray-900/20 opacity-30 rounded-3xl" />
               <div className="absolute inset-0 border border-gray-700 rounded-3xl" />
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px] blur opacity-20 group-hover:opacity-30 transition" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px] blur opacity-20 group-hover:opacity-50 transition" />
 
               <div className="relative opacity-90 p-6 sm:p-8 rounded-3xl min-h-[280px] flex flex-col">
                 <h2
@@ -143,7 +143,7 @@ export default function HowToBuy() {
             <div className="relative group ">
               <div className="absolute inset-0 bg-black opacity-20 rounded-3xl" />
               <div className="absolute inset-0 border border-gray-700 rounded-3xl" />
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px] blur opacity-20 group-hover:opacity-30 transition" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700/50 to-gray-600/50 rounded-[24px] blur opacity-30 group-hover:opacity-50 transition" />
 
               <div className="relative opacity-90 p-6 sm:p-8 rounded-3xl min-h-[280px] flex flex-col">
                 <h2
