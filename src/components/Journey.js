@@ -62,6 +62,7 @@ export default function SpaceLanding() {
         </div>
       </div>
 
+
       {/* Main Content */}
       <div className="relative z-10 flex mt-40 items-center justify-center  px-4"
          style={{
