@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7482e2aa.css",
+    "main.js": "/static/js/main.53234b26.js",
+    "static/js/891.ac917174.chunk.js": "/static/js/891.ac917174.chunk.js",
+    "static/media/TT Firs Neue Trial Medium.ttf": "/static/media/TT Firs Neue Trial Medium.6c7be9f47861737e9c85.ttf",
+    "static/media/ObjectSans-Regular.otf": "/static/media/ObjectSans-Regular.8e3ca8a29d32866844a1.otf",
+    "static/media/Technology-Bold.ttf": "/static/media/Technology-Bold.8cdd2cfe2ab96f416aff.ttf",
+    "static/media/Akira Expanded Demo.otf": "/static/media/Akira Expanded Demo.5198553380d9bb727554.otf",
+    "index.html": "/index.html",
+    "main.7482e2aa.css.map": "/static/css/main.7482e2aa.css.map",
+    "main.53234b26.js.map": "/static/js/main.53234b26.js.map",
+    "891.ac917174.chunk.js.map": "/static/js/891.ac917174.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7482e2aa.css",
+    "static/js/main.53234b26.js"
+  ]
+}
