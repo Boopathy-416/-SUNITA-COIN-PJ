@@ -1,11 +1,21 @@
 export default function Tokenomics() {
   return (
-    <div className="min-h-screen relative text-white flex items-center justify-center p-6">
-      <img
-        src="https://res.cloudinary.com/dprlidj0p/image/upload/v1732535851/tokenbg1_yw0nki.png"
-        alt="Background Layer 1"
-        className="absolute inset-0 w-full h-full object-cover -z-10"
-      />
+    <div className="min-h-screen relative text-white flex items-center justify-center py-8 px-4 ">
+      <div
+        className="absolute inset-0  z-10"
+        style={{
+          background: `
+            linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%), 
+            linear-gradient(to top, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),  `,
+          pointerEvents: "none",
+        }}
+      >
+        <img
+          src="https://res.cloudinary.com/dprlidj0p/image/upload/v1732535851/tokenbg1_yw0nki.png"
+          alt="Background Layer 1"
+          className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
+        />
+      </div>
 
       <img
         src="https://res.cloudinary.com/dprlidj0p/image/upload/v1732535852/tokenbg2_ghegib.png"
@@ -16,23 +26,23 @@ export default function Tokenomics() {
         }}
       />
 
-      <div className="relative w-full h-full flex items-center justify-center">
+      <div className="relative w-[100%] lg:py-10 py-20 md:py-8 px-20 md-px-10 flex items-center justify-center">
         <div
           className="absolute  left-4 sm:top-8 sm:left-8"
           style={{
-            top: "-200px",
+            top: "-100px",
           }}
         >
-          <div className="relative group">
+          <div className="relative px-2 lg:px-10 group">
             {/* Four Corners */}
             <div className="absolute -inset-[10px] pointer-events-none">
-              <div className="absolute -top-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-t-2 border-[#696767] rounded-tl-[20px]" />
-              <div className="absolute -top-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-t-2 border-[#696767] rounded-tr-[20px]" />
-              <div className="absolute -bottom-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-b-2 border-[#696767] rounded-bl-[20px]" />
-              <div className="absolute -bottom-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-b-2 border-[#696767] rounded-br-[20px]" />
+              <div className="absolute -top-2 -left-2 w-[35px] h-[52px] lg:h-[100px] opacity-40 border-l-[0.64px] border-t-[0.64px] border-[#696767] rounded-tl-[20px] " />
+              <div className="absolute -top-2 -right-2 w-[35px] h-[52px] lg:h-[100px] opacity-40 border-r-[0.64px] border-t-[0.64px] border-[#696767] rounded-tr-[20px] " />
+              <div className="absolute -bottom-2 -left-2 w-[35px] h-[54px] lg:h-[90px] opacity-40 border-l-[0.64px] border-b-[0.64px] border-[#696767] rounded-bl-[20px] " />
+              <div className="absolute -bottom-2 -right-2 w-[35px] h-[54px] lg:h-[90px] opacity-40 border-r-[0.64px] border-b-[0.64px] border-[#696767] rounded-br-[20px] " />
             </div>
             <div
-              className="text-white  text-5xl sm:text-7xl font-normal tracking-[0.06em] text-center mb-2"
+              className="text-white   text-[29px] lg:text-[64px]  text-center"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -40,7 +50,7 @@ export default function Tokenomics() {
               55%
             </div>
             <div
-              className="text-gray-500 text-2xl sm:text-3xl lg:text-4xl tracking-wider tracking-[0.06em] text-center"
+              className="text-gray-500 text-[18.35px]  lg:text-[40px] tracking-wider tracking-[0.06em] text-center"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -54,19 +64,19 @@ export default function Tokenomics() {
         <div
           className="absolute  right-4 sm:top-8 sm:right-8"
           style={{
-            top: "-200px",
+            top: "-100px",
           }}
         >
-          <div className="relative group">
+          <div className="relative px-2 lg:px-10 group">
             {/* Four Corners */}
             <div className="absolute -inset-[10px] pointer-events-none">
-              <div className="absolute -top-2 -left-2 w-[35px] h-[40px] opacity-40 border-l-2 border-t-2 border-[#696767] rounded-tl-[20px]" />
-              <div className="absolute -top-2 -right-2 w-[35px] h-[40px] opacity-40 border-r-2 border-t-2 border-[#696767] rounded-tr-[20px]" />
-              <div className="absolute -bottom-2 -left-2 w-[35px] h-[40px] opacity-40 border-l-2 border-b-2 border-[#696767] rounded-bl-[20px]" />
-              <div className="absolute -bottom-2 -right-2 w-[35px] h-[40px] opacity-40 border-r-2 border-b-2 border-[#696767] rounded-br-[20px]" />
+              <div className="absolute -top-2 -left-2 w-[35px] h-[52px] lg:h-[100px] opacity-40 border-l-[0.64px] border-t-[0.64px] border-[#696767] rounded-tl-[20px] " />
+              <div className="absolute -top-2 -right-2 w-[35px] h-[52px] lg:h-[100px] opacity-40 border-r-[0.64px] border-t-[0.64px] border-[#696767] rounded-tr-[20px] " />
+              <div className="absolute -bottom-2 -left-2 w-[35px] h-[60px] lg:h-[97px] opacity-40 border-l-[0.64px] border-b-[0.64px] border-[#696767] rounded-bl-[20px] " />
+              <div className="absolute -bottom-2 -right-2 w-[35px] h-[60px] lg:h-[97px] opacity-40 border-r-[0.64px] border-b-[0.64px] border-[#696767] rounded-br-[20px] " />
             </div>
             <div
-              className="text-white text-5xl sm:text-7xl font-normal tracking-[0.06em] text-center mb-2"
+              className="text-white  text-[29px] lg:text-[64px] font-normal tracking-[0.06em] text-center mb-2"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -74,7 +84,7 @@ export default function Tokenomics() {
               20%
             </div>
             <div
-              className="text-gray-500 text-2xl sm:text-3xl lg:text-4xl tracking-wider tracking-[0.06em] text-center"
+              className="text-gray-500 text-[18.35px]  lg:text-[40px] tracking-wider tracking-[0.06em] text-center"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -88,19 +98,20 @@ export default function Tokenomics() {
         <div
           className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 "
           style={{
-            bottom: "-200px",
+            bottom: "-100px",
+            left: "60px",
           }}
         >
-          <div className="relative group">
+          <div className="relative group   lg:px-20">
             {/* Four Corners */}
             <div className="absolute -inset-[10px] pointer-events-none">
-              <div className="absolute -top-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-t-2 border-[#696767] rounded-tl-[20px]" />
-              <div className="absolute -top-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-t-2 border-[#696767] rounded-tr-[20px]" />
-              <div className="absolute -bottom-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-b-2 border-[#696767] rounded-bl-[20px]" />
-              <div className="absolute -bottom-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-b-2 border-[#696767] rounded-br-[20px]" />
+              <div className="absolute -top-2 -left-10 w-10  h-[100px] opacity-40 border-l-[0.64px] border-t-[0.64px] border-[#696767] rounded-tl-[20px] " />
+              <div className="absolute -top-2 -right-10 w-10  h-[100px]  opacity-40 border-r-[0.64px] border-t-[0.64px] border-[#696767] rounded-tr-[20px] " />
+              <div className="absolute -bottom-2 -left-10 w-10  h-[100px]  opacity-40 border-l-[0.64px] border-b-[0.64px] border-[#696767] rounded-bl-[20px] " />
+              <div className="absolute -bottom-2 -right-10 w-10  h-[100px] opacity-40 border-r-[0.64px] border-b-[0.64px] border-[#696767] rounded-br-[20px] " />
             </div>
             <div
-              className="text-white text-5xl sm:text-7xl font-normal tracking-[0.06em] text-center mb-2"
+              className="text-white  text-[29px] lg:text-[64px] text-center mb-2"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -108,7 +119,7 @@ export default function Tokenomics() {
               20%
             </div>
             <div
-              className="text-gray-500 text-2xl sm:text-3xl lg:text-4xl tracking-wider tracking-[0.06em] text-center"
+              className="text-gray-500 text-[18.35px]  lg:text-[40px] tracking-wider tracking-[0.06em] text-center"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -120,21 +131,23 @@ export default function Tokenomics() {
 
         {/* Bottom Right */}
         <div
-          className="absolute  right-4 sm:bottom-8 sm:right-8"
+          className="absolute sm:bottom-40 sm:right-0"
           style={{
-            bottom: "-200px",
+            bottom: "-100px",
+            right: "60px",
           }}
         >
-          <div className="relative group">
+          <div className="relative group lg:px-14">
             {/* Four Corners */}
             <div className="absolute -inset-[10px] pointer-events-none">
-              <div className="absolute -top-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-t-2 border-[#696767] rounded-tl-[20px]" />
-              <div className="absolute -top-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-t-2 border-[#696767] rounded-tr-[20px]" />
-              <div className="absolute -bottom-2 -left-2 w-10 h-[40px] opacity-40 border-l-2 border-b-2 border-[#696767] rounded-bl-[20px]" />
-              <div className="absolute -bottom-2 -right-2 w-10 h-[40px] opacity-40 border-r-2 border-b-2 border-[#696767] rounded-br-[20px]" />
+              <div className="absolute -top-2 -left-10 w-10  h-[100px] opacity-40 border-l-[0.64px] border-t-[0.64px] border-[#696767] rounded-tl-[20px] " />
+              <div className="absolute -top-2 -right-10 w-10  h-[100px]  opacity-40 border-r-[0.64px] border-t-[0.64px] border-[#696767] rounded-tr-[20px] " />
+              <div className="absolute -bottom-2 -left-10 w-10  h-[100px]  opacity-40 border-l-[0.64px] border-b-[0.64px] border-[#696767] rounded-bl-[20px] " />
+              <div className="absolute -bottom-2 -right-10 w-10  h-[100px] opacity-40 border-r-[0.64px] border-b-[0.64px] border-[#696767] rounded-br-[20px] " />
             </div>
+
             <div
-              className="text-white text-5xl sm:text-7xl font-normal tracking-[0.06em] text-center mb-2"
+              className="text-white text-[29px] lg:text-[64px] tracking-[0.06em] text-center p-1 "
               style={{
                 fontFamily: "Squada One",
               }}
@@ -142,7 +155,7 @@ export default function Tokenomics() {
               5%
             </div>
             <div
-              className="text-gray-500 text-2xl sm:text-3xl lg:text-4xl tracking-wider tracking-[0.06em] text-center"
+              className="text-gray-500 text-[18.35px]  lg:text-[40px] tracking-wider tracking-[0.06em] text-center"
               style={{
                 fontFamily: "Squada One",
               }}
@@ -156,24 +169,23 @@ export default function Tokenomics() {
           {/* Four Outer Corners */}
           <div className="absolute -inset-[10px] pointer-events-none">
             {/* Top Left Corner */}
-            <div className="absolute -top-10 -left-5 w-24 h-24 opacity-40 border-l-2 border-t-2 border-[#696767] rounded-tl-[25px]" />
+            <div className="absolute -top-10 -left-2 w-24 h-24 opacity-80 border-l-[0.64px] border-t-[0.64px] border-[#696767] rounded-tl-[34px]" />
             {/* Top Right Corner */}
-            <div className="absolute -top-10 -right-5 w-24 h-24 opacity-40 border-r-2 border-t-2 border-[#696767] rounded-tr-[25px]" />
+            <div className="absolute -top-10 -right-2 w-24 h-24 opacity-80 border-r-[0.64px] border-t-[0.64px] border-[#696767] rounded-tr-[34px]" />
             {/* Bottom Left Corner */}
-            <div className="absolute -bottom-10 -left-5 w-24 h-24 opacity-40 border-l-2 border-b-2 border-[#696767] rounded-bl-[25px]" />
+            <div className="absolute -bottom-10 -left-2 w-24 h-24 opacity-80 border-l-[0.64px] border-b-[0.64px] border-[#696767] rounded-bl-[34px]" />
             {/* Bottom Right Corner */}
-            <div className="absolute -bottom-10 -right-5 w-24 h-24 opacity-40 border-r-2 border-b-2 border-[#696767] rounded-br-[25px]" />
+            <div className="absolute -bottom-10 -right-2 w-24 h-24 opacity-80 border-r-[0.64px] border-b-[0.64px] border-[#696767] rounded-br-[34px]" />
           </div>
 
           {/* Inner Content Box */}
           <div className="flex items-center justify-center relative">
-            <div className="relative w-full max-w-[391px] h-[261px] rounded-[10px] bg-zinc-900/50 backdrop-blur-sm p-4 sm:p-8 border border-zinc-800 mx-auto">
+            <div className="relative w-full max-w-[391px] h-[261px] rounded-[10px] bg-zinc-900/50 backdrop-blur-sm p-4   mx-auto">
               {/* Content inside the box */}
               <h1
-                className="text-2xl sm:text-3xl md:text-4xl text-[#D4D4D4] mt-5 mb-14 tracking-wider text-center"
+                className="text-[26.31px] lg:text-[33.27px] py-10 text-[#D4D4D4]  text-center"
                 style={{
                   fontFamily: "Akira Expanded",
-                  fontSize: "33.27px",
                   fontWeight: "800",
                   letterSpacing: "0.05em",
                   lineHeight: "38.27px",
@@ -183,10 +195,9 @@ export default function Tokenomics() {
                 TOKENOMICS
               </h1>
               <p
-                className="text-zinc-400 text-sm sm:text-base md:text-lg text-center"
+                className="text-zinc-400 text-[16px] lg:text-[16.64px] lg:px-4 px-1 text-center"
                 style={{
                   fontFamily: "Squada One",
-                  fontSize: "16.64px",
                   fontWeight: "400",
                   marginTop: "-10px",
                   lineHeight: "17.58px",

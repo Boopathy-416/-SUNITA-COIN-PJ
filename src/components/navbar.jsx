@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+
+
 const navItems = [
   { title: "HOME", href: "#home" },
   { title: "ABOUT US", href: "#about" },
   { title: "HOW TO BUY", href: "#how-to-buy" },
   { title: "TOKENOMICS", href: "#tokenomics" },
   { title: "GALLERY", href: "#gallery" },
-  { title: "BUY TOKEN", href: "#how-to-buy" },
+  { title: "BUY TOKEN", href: "#buy-token" },
 ];
 
 function Navbar() {
@@ -53,20 +55,16 @@ function Navbar() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false); // Close mobile menu on navigation
+      setMobileMenuOpen(false); 
     }
   };
 
   return (
-    <div className="fixed flex justify-center w-full align-center mt-5  items-center z-50  ">
+    <div className="fixed  flex justify-center w-full align-center mt-5  items-center z-50  ">
       <header className=" top-0 left-0 right-0  bg-[#FFFFFF1A]  border-[#DEDEDE78] rounded-lg  backdrop-blur-md p-5 transition-all "
-      style={{
-        fontFamily: "Squada One",
-        fontSize: "20px",
-        fontWeight: "400",
-        lineHeight: "21.14px",
-      }}>
-        <div className="flex items-center justify-between md:space-x-[400px] space-x-[270px] sm:space-x-[260px] rounded-lg">
+    >
+        <div className="flex items-center justify-between md:space-x-[500px] space-x-[250px]  rounded-lg"
+        >
           <div className="w-10 h-10  overflow-hidden lg:hidden">
             <img
               src="/Group 587.png"
@@ -105,8 +103,15 @@ function Navbar() {
               />
             </div>
           </div>
+
           {navItems.map((item) => (
             <a
+            style={{
+              fontFamily: "Squada One",
+              fontSize: "20px",
+              fontWeight: "400",
+              lineHeight: "21.14px",
+            }}
               key={item.href}
               href={item.href}
               onClick={(e) => {
@@ -121,7 +126,7 @@ function Navbar() {
             >
               {item.title}
               {activeSection === item.href.substring(1) && (
-                <span className="absolute -bottom-5 left-0 h-1 w-full bg-[#DEDEDE78]"></span>
+                <span className="absolute -bottom-5 left-0 h-1 w-full  bg-[#DEDEDE78]"></span>
               )}
             </a>
           ))}

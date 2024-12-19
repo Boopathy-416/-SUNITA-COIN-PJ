@@ -1,127 +1,90 @@
-import React, { useState, useRef, useEffect } from "react";
+// import React, { useEffect, useRef } from "react";
 
-export default function SpaceGallery() {
-  const images = [
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268271/G1_i6rku7.png",
-      alt: "Image 1",
-      className: "gallery__item--1",
-      type: "image",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268272/G2_dglhyg.png",
-      alt: "Image 2",
-      className: "gallery__item--2",
-      type: "image",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268272/G3_ycfrla.png",
-      alt: "Image 3",
-      className: "gallery__item--3",
-      type: "image",
-    },
-    {
-      src: "https://youtu.be/yktEpsRfuF0?si=8CsFQP8nOD7Hyaz6",
-      alt: "Video 1",
-      className: "gallery__item--4",
-      type: "video",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268271/G5_xsx4oy.png",
-      alt: "Image 5",
-      className: "gallery__item--5",
-      type: "image",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268272/G6_vf39ie.png",
-      alt: "Image 6",
-      className: "gallery__item--6",
-      type: "image",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268272/G7_orcupx.png",
-      alt: "Image 7",
-      className: "gallery__item--7",
-      type: "image",
-    },
-    {
-      src: "https://res.cloudinary.com/dprlidj0p/image/upload/v1732268273/G8_tmwzdh.png",
-      alt: "Image 8",
-      className: "gallery__item--8",
-      type: "image",
-    },
+
+export default function Test() {
+ 
+  const rows = [
+    { images: [1, 2, 3, 4,], animation: 'animate-marquee-left' },
+    { images: [1, 2, 3, 4,], animation: 'animate-marquee-right' },
+    { images: [1, 2, 3, 4,], animation: 'animate-marquee-left' },
   ];
 
-  const VideoPlayer = ({ videoUrl, altText }) => {
-    const [isMuted, setIsMuted] = useState(false);
-    const iframeRef = useRef(null);
 
-    const videoId = new URL(videoUrl).searchParams.get("v");
 
-    const toggleMute = () => {
-      if (iframeRef.current) {
-        const iframe = iframeRef.current.contentWindow;
-        iframe.postMessage(
-          JSON.stringify({
-            event: "command",
-            func: isMuted ? "unMute" : "mute",
-            args: [],
-          }),
-          "*"
-        );
-        setIsMuted(!isMuted);
-      }
-    };
+  // const VideoPlayer = ({ videoUrl, altText }) => {
+    // const iframeRef = useRef(null);
 
-    useEffect(() => {
-      const iframe = iframeRef.current;
-      if (iframe) {
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1`;
-      }
-    }, [videoId]);
+    // useEffect(() => {
+    //   const iframe = iframeRef.current;
 
-    return (
-      <div style={{ position: "relative", width: "100%", height: "100%" }}>
-        <iframe
-          ref={iframeRef}
-          className="gallery__video"
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          title={altText}
-          style={{
-            width: "100%",
-            height: "100%",
-            borderRadius: "10px",
-          }}
-        ></iframe>
-        <button
-          onClick={toggleMute}
-          style={{
-            position: "absolute",
-            bottom: "10px",
-            right: "10px",
-            background: "rgba(0, 0, 0, 0.5)",
-            color: "#fff",
-            border: "none",
-            borderRadius: "50%",
-            width: "40px",
-            height: "40px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-          }}
-        >
-          {isMuted ? "🔇" : "🔊"}
-        </button>
-      </div>
-    );
-  };
+
+    //   iframe.src = `${videoUrl}?autoplay=1&controls=0&rel=0&showinfo=0&modestbranding=1&disablekb=1&loop=1&playlist=${videoUrl.split('/').pop()}`;
+
+    //   const handleScroll = () => {
+    //     const rect = iframe.getBoundingClientRect();
+    //     const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+    //     if (isVisible) {
+    //       iframe.contentWindow.postMessage(
+    //         '{"event":"command","func":"playVideo","args":""}',
+    //         "*"
+    //       );
+    //     } else {
+    
+    //       iframe.contentWindow.postMessage(
+    //         '{"event":"command","func":"pauseVideo","args":""}',
+    //         "*"
+    //       );
+    //     }
+    //   };
+
+    //   window.addEventListener("scroll", handleScroll);
+
+    //   return () => {
+    //     window.removeEventListener("scroll", handleScroll);
+    //   };
+    // }, [videoUrl]);
+
+  //   return (
+  //     <div
+  //       className="video-container"
+  //       style={{
+  //         position: "relative",
+  //         width: "100%",
+  //         height: "100%",
+  //         borderRadius: "25px",
+  //         overflow: "hidden",
+  //       }}
+  //     >
+  //       <iframe
+  //         ref={iframeRef}
+  //         title={altText}
+  //         allow="autoplay"
+  //         allowFullScreen
+  //         style={{
+  //           width: "100%",
+  //           height: "100%",
+  //           borderRadius: "25px",
+  //         }}
+  //       ></iframe>
+  //     </div>
+  //   );
+  // };
 
   return (
-    <div className="relative min-h-screen mx-auto p-8">
-      {/* Header */}
+    <div className="relative min-h-screen mx-auto p-8 lg:px-20">
+
+      <div
+        className="absolute inset-0  z-10"
+        style={{
+          background: `
+            linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0) 20%), 
+            linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0) 20%), 
+             linear-gradient(to left, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 20%), 
+            linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 20%)`,
+          pointerEvents: "none",
+        }}
+      ></div>
       <div className="xl:-mb-[10%] md:-mb-[4%]">
         <h1
           className="font-bold mb-3 text-4xl sm:text-2xl md:text-6xl lg:text-7xl xl:text-8xl text-white border-b border-white xl:w-[35%] md:w-[45%] mx-start"
@@ -150,16 +113,62 @@ export default function SpaceGallery() {
       </div>
       {/* Gallery */}
       <div className="gallery">
-        {images.map((item, index) => (
-          <figure className={`gallery__item ${item.className}`} key={index}>
-            {item.type === "image" ? (
-              <img src={item.src} className="gallery__img" alt={item.alt} />
-            ) : (
-              <VideoPlayer videoUrl={item.src} altText={item.alt} />
-            )}
-          </figure>
+      <div className="relative w-full">
+        {rows.map((row, rowIndex) => (
+          <div key={`row-${rowIndex}`} className="flex overflow-hidden mb-[24px] opacity-60">
+            {/* Original Row */}
+            <div className={`${row.animation} flex  whitespace-nowrap`}>
+              {row.images.map((i) => (
+                <div
+                  key={`row${rowIndex}-${i}`}
+                  className="w-[400px] h-[200px] flex-shrink-0"
+                >
+                  <img
+                    src={`https://res.cloudinary.com/dprlidj0p/image/upload/v1734505877/Group_1171275593_kztn6d.png`}
+                    alt={`Gallery image ${i}`}
+                    className="w-full h-full object-cover grayscale"
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Duplicate Row for Seamless Scrolling */}
+            <div
+              className={`${row.animation} flex  whitespace-nowrap`}
+              aria-hidden="true"
+            >
+              {row.images.map((i) => (
+                <div
+                  key={`row${rowIndex}-duplicate-${i}`}
+                  className="w-[350px] h-[200px] flex-shrink-0"
+                >
+                  <img
+                    src={`https://res.cloudinary.com/dprlidj0p/image/upload/v1734505877/Group_1171275593_kztn6d.png`}
+                    alt={`Gallery image ${i}`}
+                    className="w-full h-full object-cover grayscale"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         ))}
+
+        {/* Centered Video/iframe */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[800px] rounded-[41.15px] aspect-video"
+        style={{
+            border:"1.87px solid  #FFFFFF",
+            boxShadow: "23px 40px 159px 0px #000000",
+
+        }}>
+          <iframe
+            src="https://www.youtube.com/embed/mAKI6fhj9fA?si=_CmF3VSjTFScwOLX"
+            className="w-full h-full rounded-[41.15px]"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </div>
+      </div>
+      
     </div>
   );
 }

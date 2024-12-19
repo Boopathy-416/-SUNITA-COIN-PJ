@@ -1,14 +1,31 @@
+import React from "react";
+
 export default function SunitaCard() {
   return (
-    <div className="min-h-screen text-white relative overflow-hidden">
+    <div
+      className="relative inset-0  z-0 bg-cover"
+      style={{ overflow: "hidden" }}
+    >
+      <iframe
+        src="https://my.spline.design/earthwallpaper-4bccde5736f7f903aee4be5c79cda0aa/"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+        style={{ position: "absolute", top: 0, left: 0 }}
+      ></iframe>
+
       <div
-        className="absolute bottom-0 left-0 w-full h-[65vh] opacity-70 bg-cover bg-no-repeat z-0"
+        className="absolute inset-0  z-10"
         style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/dprlidj0p/image/upload/v1732540481/last_nhnveq.png')",
-          maskImage: "linear-gradient(to top, rgba(0,0,1,1), rgba(0,0,1,0))",
+          background: `
+            linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0) 50%), 
+            linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0) 50%), 
+            linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0) 50%), 
+            linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0) 50%)
+          `,
+          pointerEvents: "none",
         }}
-      />
+      ></div>
 
       <div className="relative z-10 container mx-auto px-4 py-12 flex flex-col items-center justify-center min-h-screen">
         <p
@@ -29,19 +46,16 @@ export default function SunitaCard() {
         </p>
 
         <div
-          className="relative w-full max-w-2xl rounded-3xl opacity-100  bg-[#2E2E2E66]  flex flex-col items-center   "
+          className="relative w-full -bottom-20 max-w-4xl p-10 lg:py-20 md:py-20 py-14 rounded-lg opacity-100   flex flex-col items-center   "
           style={{
-            border: "1.14px solid #848484",
-            padding: "46px",
-         
-
-            backdropFilter:"43.2px"
+            border:"2.14px solid #848484",
+            // padding: "100px",
           }}
         >
-          <div className="absolute  inset-0 bg-blue-500/20 blur-[80px] rounded-full pointer-events-none" />
+          <div className="absolute  inset-0 bg-[#2e2e2e66] backdrop-blur-lg border-1 border-[#848484] rounded-xl  pointer-events-none" />
 
-          <div className="relative    flex flex-wrap items-center justify-center gap-4">
-            <button className="bg-white hover:bg-white/90 text-black rounded-xl w-12 h-12 flex items-center justify-center">
+          <div className="relative  flex flex-wrap items-center justify-center gap-4">
+            <button className="bg-white hover:bg-white/90 text-black rounded-[5.79px] w-12 h-12 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -59,7 +73,7 @@ export default function SunitaCard() {
               </svg>
             </button>
 
-            <button className="bg-white hover:bg-white/90 text-black rounded-xl w-12 h-12 flex items-center justify-center">
+            <button className="bg-white hover:bg-white/90 text-black rounded-[5.79px] w-12 h-12 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -78,7 +92,7 @@ export default function SunitaCard() {
             <button
               className="
     hover:bg-white/90 
-    rounded-xl 
+    rounded-[5.79px] 
     px-8 
     h-12 
     text-center 
@@ -95,8 +109,6 @@ export default function SunitaCard() {
             </button>
           </div>
         </div>
-
-
       </div>
     </div>
   );
